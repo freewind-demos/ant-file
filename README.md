@@ -1,5 +1,7 @@
-Ant Demo
-========
+Ant File Demo
+==============
+
+File operations with ant.
 
 ```
 brew install ant
@@ -11,19 +13,8 @@ Run:
 ant
 ```
 
-or
+or show verbose message:
 
 ```
-ant hello
-```
-
-You will see:
-
-```
-
-hello:
-     [echo] Hello ant!
-
-BUILD SUCCESSFUL
-Total time: 0 seconds
+ant -verbose
 ```

@@ -1,6 +1,12 @@
 <?xml version="1.0" ?>
-<project name="ant-demo" default="hello">
-	<target name="hello">
-		<echo message="Hello ant!" />
+<project name="ant-demo" default="file-operations">
+	<target name="file-operations">
+		<mkdir dir="build" />
+		<mkdir dir="build/dir-b" />
+		<echo file="build/a.txt" message="demo file" />
+		<copy file="build/a.txt" tofile="build/b.txt" />
+		<move file="build/a.txt" tofile="build/a1.txt" />
+		<move file="build/b.txt" todir="build/dir-b" />
+		<delete dir="build" />
 	</target>
 </project>
